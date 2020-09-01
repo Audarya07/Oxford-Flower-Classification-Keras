@@ -13,13 +13,12 @@
 ### Making the model
 1. Here we have first initialised the Sequential model.
 2. Then we have used 1 convolutional layer having input shape 150 X 150 pixels for our model, activation function as ReLU and 64 feature detector of size 3 * 3.
-
-3. Then we have used 2 convolutional layers having activation function as ReLU and 128 feature detector of size 3 * 3.
-4. Then we have used 1 convolutional layer having activation function as ReLU and 256 feature detector of size 3 * 3.
-5. Max pooling layers of size 2 * 2 units and Dropout of 0.5 units have been used.
-4. Next the flattening operation is performed to convert the pooled features into a single vector.
-5. This flattened vector is fed into a hidden with 512 neurons which applies layer the ReLU activation function.
-6. In the end we get the output as one of the flowers from 102 categories. Since we have more than 2 categories, we are using __softmax__ activation function.
+3. Then we have used 2 convolutional layers having activation function as ReLU and 128 feature detector of size 3 * 3.  
+4. Then we have used 1 convolutional layer having activation function as ReLU and 256 feature detector of size 3 * 3.  
+5. Max pooling layers of size 2 * 2 units and Dropout of 0.5 units have been used.  
+6. Next the flattening operation is performed to convert the pooled features into a single vector.  
+7. This flattened vector is fed into a hidden with 512 neurons which applies layer the ReLU activation function.  
+8. In the end we get the output as one of the flowers from 102 categories. Since we have more than 2 categories, we are using __softmax__ activation function.  
 
 ### Compiling and Fitting the model to the training set
 * We compile the model using the **Adam** optimizer, loss function **categorical_crossentropy**  and metrics as **accuracy**.
